@@ -20,7 +20,7 @@ sudo apt install -y yarn
 
 ##### Homebrew #####
 (echo ""; echo "##### Homebrew #####"; echo "";) >> ./.brev/logs/setup.log
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | sudo -E bash -
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash -
 
 ##### Node v14.x + npm #####
 (echo ""; echo "##### Node v14.x + npm #####"; echo "";) >> ./.brev/logs/setup.log
