@@ -49,4 +49,8 @@ sudo apt-get install -y nodejs
 # source ~/.zshrc
 # rm go1.16.7.linux-amd64.tar.gz
 
+##### Custom commands #####
+(echo ""; echo "##### Custom commands #####"; echo "";) >> ./.brev/logs/setup.log
 npm install
+asdf
+echo "Done!" >> ./.brev/logs/setup.log
