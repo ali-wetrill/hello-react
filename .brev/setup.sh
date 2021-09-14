@@ -54,5 +54,4 @@ sudo apt-get install -y nodejs
 ##### Custom commands #####
 (echo ""; echo "##### Custom commands #####"; echo "";) >> ./.brev/logs/setup.log
 npm install
-asdf
 echo "Done!" >> ./.brev/logs/setup.log
