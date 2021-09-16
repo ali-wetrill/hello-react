@@ -14,23 +14,23 @@ set -euo pipefail
 ####################################################################################
 
 ##### Yarn #####
-(echo ""; echo "##### Yarn #####"; echo "";) >> ./.brev/logs/setup.log
+(echo ""; echo "##### Yarn #####"; echo "";)
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt update
 sudo apt install -y yarn
 
 ##### Homebrew #####
-(echo ""; echo "##### Homebrew #####"; echo "";) >> ./.brev/logs/setup.log
+(echo ""; echo "##### Homebrew #####"; echo "";)
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash -
 
 ##### Node v14.x + npm #####
-(echo ""; echo "##### Node v14.x + npm #####"; echo "";) >> ./.brev/logs/setup.log
+(echo ""; echo "##### Node v14.x + npm #####"; echo "";)
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 ##### Python + Pip + Poetry #####
-# (echo ""; echo "##### Python + Pip + Poetry #####"; echo "";) >> ./.brev/logs/setup.log
+# (echo ""; echo "##### Python + Pip + Poetry #####"; echo "";)
 # sudo apt-get install -y python3-distutils
 # sudo apt-get install -y python3-apt
 # curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
@@ -40,7 +40,7 @@ sudo apt-get install -y nodejs
 # source $HOME/.poetry/env
 
 ##### Golang v16x #####
-# (echo ""; echo "##### Golang v16x #####"; echo "";) >> ./.brev/logs/setup.log
+# (echo ""; echo "##### Golang v16x #####"; echo "";)
 # wget https://golang.org/dl/go1.16.7.linux-amd64.tar.gz
 # sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.16.7.linux-amd64.tar.gz
 # echo "" | sudo tee -a ~/.bashrc
@@ -52,6 +52,6 @@ sudo apt-get install -y nodejs
 # rm go1.16.7.linux-amd64.tar.gz
 
 ##### Custom commands #####
-(echo ""; echo "##### Custom commands #####"; echo "";) >> ./.brev/logs/setup.log
+(echo ""; echo "##### Custom commands #####"; echo "";)
 npm install
-echo "Done!" >> ./.brev/logs/setup.log
+echo "Done!"
