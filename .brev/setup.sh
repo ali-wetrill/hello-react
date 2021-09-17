@@ -54,5 +54,4 @@ sudo apt-get install -y nodejs
 ##### Custom commands #####
 (echo ""; echo "##### Custom commands #####"; echo "";)
 npm install
-asdf
 echo "Done!"
